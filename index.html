@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog!!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
@@ -15,22 +16,23 @@
             <nav class="flex justify-between items-center w-full h-24 p-8 shadow-xl">
                 <img src="logo.webp" alt="logo" class="w-20 h-20 mix-blend-multiply">
 
-                <div class="flex flex-1 justify-center items-center p-4 m-7">
-                    <button type="button" class="mx-4 p-3 bg-yellow-900 rounded text-white "> home</button>
-                    <button type="button" class="mx-4 p-3 bg-yellow-900 rounded text-white"> trending</button>
-                    <button type="button" class="mx-4 p-3 bg-yellow-900 rounded text-white"> contact</button>
-                    <button type="button" class="mx-4 p-3 bg-yellow-900 rounded text-white"> profile</button>
+                <div class="flex flex-1 justify-center items-center p-4 m-7 ">
+                    <button type="button" class="mx-4 p-3 bg-yellow-900/10 rounded text-black hover:bg-yellow-900 hover:text-white "> home</button>
+                    <button type="button" class="mx-4 p-3 bg-yellow-900/10 rounded text-black hover:bg-yellow-900 hover:text-white"> trending</button>
+                    <button type="button" class="mx-4 p-3 bg-yellow-900/10 rounded text-black hover:bg-yellow-900 hover:text-white"> contact</button>
+                   
                 </div>
+                <button type="button" class="mx-4 p-3 bg-yellow-900/50 rounded hover:bg-yellow-900/10"><i class="fa-solid fa-user" style="color: #232323;"></i></button>
             </nav>
         </div>
     </header>
     <div class="flex flex-row">
         <aside
-            class="flex flex-col h-screen w-60 bg-yellow-900/10 justify-between items-center sticky bottom-0 top-0 left-0">
-            <button type="button" class="w-fit rounded bg-neutral-300/30 p-4 m-4">lifestyle</button>
-            <button type="button" class="w-fit rounded bg-neutral-300/30 p-4 m-4">travel</button>
-            <button type="button" class="w-fit rounded bg-neutral-300/30 p-4 m-4">Food</button>
-            <button type="button" class="w-fit rounded bg-neutral-300/30 p-4 m-4">clothes</button>
+            class="flex flex-col h-screen w-60 justify-between items-center sticky bottom-0 top-0 left-0 border-x-2">
+            <button type="button" class="w-fit rounded-lg bg-neutral-300/30 p-4 m-4 hover:shadow-md "><i class="fa-solid fa-person-dots-from-line"></i> Lifestyle</button>
+            <button type="button" class="w-fit rounded-lg bg-neutral-300/30 p-4 m-4 hover:shadow-md "><i class="fa-solid fa-plane"></i> Travel</button>
+            <button type="button" class="w-fit rounded-lg bg-neutral-300/30 p-4 m-4 hover:shadow-md "><i class="fa-solid fa-utensils"></i> Food</button>
+            <button type="button" class="w-fit rounded-lg bg-neutral-300/30 p-4 m-4 hover:shadow-md "><i class="fa-solid fa-shirt"></i> Clothes</button>
 
         </aside>
         <main class="flex  flex-col">
@@ -38,8 +40,8 @@
             <section class="container mx-auto py-8">
                 <h2 class="text-3xl font-semibold text-center mb-6">Featured Posts</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="bg-yellow-900/10 p-4 rounded shadow-lg hover:drop-shadow-2xl">
-                        <img src="travel.webp" alt="Post Image" class="w-full h-48 object-cover rounded">
+                    <div class="bg-yellow-900/5 p-4 rounded-lg shadow-lg hover:drop-shadow-2xl border-2">
+                        <img src="travel.webp" alt="Post Image" class="w-full h-48 object-cover rounded-md">
                         <h3 class="text-xl font-bold mt-2">Ternate Island Travel Guide & Best Things To Do (Maluku)</h3>
                         <p class="text-gray-600">Ternate is a small, cone-shaped volcanic island in the North Maluku
                             province of Indonesia. It isn’t likely to ever become a big vacation spot for tourists, but
@@ -47,15 +49,15 @@
                             on the way to somewhere else in Indonesia, it’s worth checking out. Here’s a travel guide
                             for some of the best things to see and do on the island!</p>
                     </div>
-                    <div class="bg-yellow-900/10 p-4 rounded shadow-lg hover:drop-shadow-2xl">
-                        <img src="beauty.webp" alt="Post Image" class="w-full h-48 object-cover rounded">
+                    <div class="bg-yellow-900/5 p-4 rounded-lg shadow-lg hover:drop-shadow-2xl border-2">
+                        <img src="beauty.webp" alt="Post Image" class="w-full h-48 object-cover rounded-md">
                         <h3 class="text-xl font-bold mt-2">U Beauty review</h3>
                         <p class="text-gray-600">I first heard of U Beauty when it started getting some hyper on social
                             media last year. I was a little hesitant to try it because of the price but when the brand
                             reached out to see if I’d like…</p>
                     </div>
-                    <div class="bg-yellow-900/10 p-4 rounded shadow-lg hover:drop-shadow-2xl">
-                        <img src="food.jpg" alt="Post Image" class="w-full h-48 object-cover rounded">
+                    <div class="bg-yellow-900/5 p-4 rounded-lg shadow-lg hover:drop-shadow-2xl border-2">
+                        <img src="food.jpg" alt="Post Image" class="w-full h-48 object-cover rounded-md">
                         <h3 class="text-xl font-bold mt-2">Chicken with Coconut Kale</h3>
                         <p class="text-gray-600"> Golden, juicy, thinly sliced pan-fried chicken swims in a creamy
                             coconut-kale gravy-like situation with slips of shallot and a bit of heat. Super easy,
@@ -65,28 +67,28 @@
             </section>
 
             <section>
-                <h2 class="text-3xl font-semibold text-center mb-6">Recent Posts</h2>
+                <h2 class="text-3xl font-semibold text-center mb-6 gap-3">Recent Posts</h2>
                 <div class="flex w-full h-fit ">
                     <ul class="flex flex-col items-start justify-between w-full">
                         <li
-                            class="flex flex-col md:flex-row rounded shadow-lg justify-evenly items-start p-4 m-3 w-full bg-yellow-900/10 hover:drop-shadow-2xl">
-                            <img src="bostonhotel.jpeg" class="w-full h-56 object-cover rounded m-3">
+                            class="flex flex-col md:flex-row rounded-lg shadow-lg justify-evenly items-start p-4 m-3 w-full bg-yellow-900/5 hover:drop-shadow-2xl">
+                            <img src="bostonhotel.jpeg" class="w-full h-56 object-cover rounded-md m-3">
                             <div>
-                                <h3 class="text-xl font-bold m-4 p-4 ">The 5 Best Hotels in Boston</h3>
+                                <h3 class="text-xl font-bold m-4 p-4 border-b-2 ">The 5 Best Hotels in Boston</h3>
                                 <p class="text-gray-600 m-4 p-4 ">Boston with its rich history, wide-open green spaces, and
                                     first-rate museums, is a must-visit city for any traveler. While I may be biased (I
                                     grew up here), I think more people should visit — especially history buffs and
                                     foodies. </p>
-                                <p class="text-gray-500 justify-self-end">September 26, 2024 by the Nomadic Matt</p>
+                                <p class="text-gray-500 justify-self-end self-end">September 26, 2024 by the Nomadic Matt</p>
 
                             </div>
                         </li>
 
                         <li
-                            class="flex flex-col md:flex-row rounded shadow-lg justify-evenly items-start p-4 m-3 w-full bg-yellow-900/10 hover:drop-shadow-2xl">
-                            <img src="tech.jpg" class="w-full h-56 object-cover rounded m-3">
+                            class="flex flex-col md:flex-row rounded shadow-lg justify-evenly items-start p-4 m-3 w-full bg-yellow-900/5 hover:drop-shadow-2xl">
+                            <img src="tech.jpg" class="w-full h-56 object-cover rounded-md m-3">
                             <div>
-                                <h3 class="text-xl font-bold m-4 p-4 ">Could Debate Prep Become an Artform With Nvidia
+                                <h3 class="text-xl font-bold m-4 p-4 border-b-2">Could Debate Prep Become an Artform With Nvidia
                                     Omniverse?</h3>
                                 <p class="text-gray-600 m-4 p-4 ">Using a simulation tool like Omniverse for debate preparation
                                     will be a game-changer if one side or the other exclusively uses it, but if both
@@ -97,10 +99,10 @@
                         </li>
 
                         <li
-                            class="flex flex-col md:flex-row rounded shadow-lg justify-evenly items-start p-4 m-3 w-full bg-yellow-900/10 hover:drop-shadow-2xl">
-                            <img src="singapour.jpg" class="w-full h-56 object-cover rounded m-3">
+                            class="flex flex-col md:flex-row rounded-lg shadow-lg justify-evenly items-start p-4 m-3 w-full bg-yellow-900/5 hover:drop-shadow-2xl">
+                            <img src="singapour.jpg" class="w-full h-56 object-cover rounded-md m-3">
                             <div>
-                                <h3 class="text-xl font-bold m-4 p-4 ">11 Unique Things to Do in Singapore for Solo
+                                <h3 class="text-xl font-bold m-4 p-4 border-b-2">11 Unique Things to Do in Singapore for Solo
                                     Travelers</h3>
                                 <p class="text-gray-600 m-4 p-4 ">Within this travel guide, I will take you through some of the
                                     best and unique things to do in Singapore, from visiting all the subculture
@@ -117,20 +119,27 @@
 
             </section>
 
-            <div class="flex flex-row">
-                <section class="bg-yellow-900/10 py-8 m-8 flex flex-row shadow-lg w-full  ">
-                    <h2 class="text-3xl font-semibold mb-4">Subscribe to our Newsletter</h2>
-                    <form class="flex justify-center space-x-2">
+            <div class="flex flex-row w-full">
+                <section class="bg-yellow-900/5 py-8 m-8 flex flex-row shadow-lg w-full justify-center rounded-lg space-x-3">
+                    <h2 class="text-3xl font-semibold mb-4"> Subscribe to our Newsletter </h2>
+                    <form class="flex justify-self-end space-x-3">
                         <input type="email" placeholder="Your email address"
                             class="p-2 border border-gray-300 rounded w-64" required>
-                        <button type="submit" class="bg-yellow-900 text-white px-4 py-2 rounded">Subscribe</button>
+                        <button type="submit" class="bg-yellow-900 text-white px-4 py-2 rounded hover:border-2 ">Subscribe</button>
                     </form>
             </div>
             </section>
     </div>
     </main>
     </div>
-    <footer>footer</footer>
+    <footer class="flex flex-row justify-between bg-yellow-900/5 h-full">
+        <p >copyright 2024°</p>
+        <div>
+            <a href="https://www.bing.com/ck/a?!&&p=801b673827cb5690JmltdHM9MTcyODE3MjgwMCZpZ3VpZD0xOTg1MTBkZS0wY2M1LTY4NDQtMjNjOS0wNDQ4MGQxODY5NWMmaW5zaWQ9NTE5OA&ptn=3&ver=2&hsh=3&fclid=198510de-0cc5-6844-23c9-04480d18695c&psq=facebook&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tLw&ntb=1"><i class="fa-brands fa-facebook w-5 h-5" style="color: #046ab9;"></i></a>
+            <a href="https://www.bing.com/ck/a?!&&p=496e6d472f7dbbadJmltdHM9MTcyODE3MjgwMCZpZ3VpZD0xOTg1MTBkZS0wY2M1LTY4NDQtMjNjOS0wNDQ4MGQxODY5NWMmaW5zaWQ9NTIwMQ&ptn=3&ver=2&hsh=3&fclid=198510de-0cc5-6844-23c9-04480d18695c&psq=instagram&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS8&ntb=1"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.bing.com/ck/a?!&&p=9b484c8fe5b5fca2JmltdHM9MTcyODE3MjgwMCZpZ3VpZD0xOTg1MTBkZS0wY2M1LTY4NDQtMjNjOS0wNDQ4MGQxODY5NWMmaW5zaWQ9NTIwNg&ptn=3&ver=2&hsh=3&fclid=198510de-0cc5-6844-23c9-04480d18695c&psq=twitter&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS8&ntb=1"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </footer>
 </body>
 
 </html>
